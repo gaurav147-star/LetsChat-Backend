@@ -3,11 +3,11 @@ const { fetchMessage } = require("../controllers/messageController");
 const messageController = require("../controllers/messageController")
 const multer = require("multer");
 const { CloudinaryStorage } = require('multer-storage-cloudinary');
-const cloudinary = require('../utils/cloudinary');
+const cloudinary = require("../utils/cloudinary")
 
 
 const router = express.Router();
-console.log(cloudinary)
+
 const storage = new CloudinaryStorage({
     cloudinary,
     params: {

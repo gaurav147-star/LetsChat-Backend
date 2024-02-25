@@ -16,8 +16,8 @@ const { protect } = require("../middlewares/authModdleware");
 const multer = require("multer");
 
 const { CloudinaryStorage } = require('multer-storage-cloudinary');
-const cloudinary = require('../utils/cloudinary')
-console.log(cloudinary)
+const cloudinary = require("../utils/cloudinary")
+
 const storage = new CloudinaryStorage({
     cloudinary,
     params: {
